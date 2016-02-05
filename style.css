@@ -38,7 +38,7 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 
-    background: rgba(33, 33, 33, .8);;
+    background: rgba(33, 33, 33, .8);
 }
 img{
     vertical-align: top;
@@ -46,65 +46,21 @@ img{
 h1,h2,h3,h4,h5,h6{
     font-family: 'sansationbold';
 }
-.box-hover{
-    position: relative;
-
-    display: inline-block;
+.header{
+    display:block;
+    
+    background: rgba(17, 17, 17, .4);
 }
-.box-hover h3{
-    line-height: 1.5em;
-
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-
-    width: 100%;
-    margin: 0;
-
-    text-align: center;
-
-    background: rgba(0, 0, 0, .8);
+.header-container{
+    max-width: 1140px;
+    margin: 0 auto;
 }
-
-.box-hover a{
-    position: absolute;
-    z-index: 2;
-    top: 0;
-
-    width: 100%;
-    height: 100%;
+.logo{
+    max-width: 230px;
+    padding: 20px;
 }
-.box-hover a:hover{
-    background: rgba(66, 185, 221, 0.8);;
-}
-.box-hover span{
-    display: none;
-}
-.box-hover a:hover span{
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
+.menu{
+    float: right;
 
-    display: block;
-
-    width: 100px;
-    height: 100px;
-    margin: -50px 0 0 -50px;
-
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, .5);
-}
-.box-hover-video::after{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin:-25px 0 0 -8px;
-    width: 0;
-    height: 0;
-    border: 25px solid transparent;
-    border-left:35px solid #fff;
-
+    min-width: 885px;
 }
