@@ -47,8 +47,8 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'sansationbold';
 }
 .header{
-    display:block;
-    
+    display: block;
+
     background: rgba(17, 17, 17, .4);
 }
 .header-container{
@@ -56,11 +56,83 @@ h1,h2,h3,h4,h5,h6{
     margin: 0 auto;
 }
 .logo{
+    display: inline-block;
+
     max-width: 230px;
     padding: 20px;
 }
 .menu{
     float: right;
+    padding: 0px;
+}
+.menu li{
+    position: relative;
 
-    min-width: 885px;
+    display: inline-block;
+}
+.menu li a{
+    font-size: 12px;
+
+    display: block;
+
+    padding: 13px 20px 31px 20px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+.menu a:hover,.current-menu-item{
+    color: #ccc;
+}
+.sub-menu{
+    position: absolute;
+    z-index: 9999;
+    top: 100%;
+    left: 15px;
+
+    display: none;
+
+    margin: 0;
+    padding: 0;
+
+    border-top: 1px solid #74c6de;
+}
+.sub-menu li{
+    display: list-item;
+
+    width: 100%;
+    margin: 0;
+
+    list-style: none;
+
+    border-bottom: 1px solid #000;
+    background: #232323;
+
+}
+.sub-menu li:last-child{
+    border:0;
+}
+.sub-menu ul{
+    top: 0;
+    left: 100%;
+
+    margin-left: 0;
+}
+.sub-menu li a{
+    font-size: 13px;
+
+    display: block;
+
+    min-width: 183px;
+    margin: 0;
+    padding: 10px 0 10px 18px;
+
+    color: #fff;
+    border: none;
+    text-shadow: 1px 1px #000;
+    text-transform: none;
+}
+.menu li:hover > ul{
+    display: block;
 }
