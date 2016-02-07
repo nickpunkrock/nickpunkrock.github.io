@@ -6,11 +6,19 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="style/normalize.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style/owl.carousel.css">
+<link rel="stylesheet" href="style/animate.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="scripts/soundmanager2.min.js"></script>
+<script type="text/javascript" src="scripts/player.js"></script>
+<script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
+<script type="text/javascript" src="scripts/wow.min.js"></script>
 </head>
 <body>
 <img class="backround-img" src="img/boxed-bg.jpg" alt="">
 <div class="container">
-	<div class="header">
+	<div class="header clear">
 		<div class="header-container">
 			<div class="logo">
 				<a href="#">
@@ -33,8 +41,61 @@
 				</ul>
 		</div>
 	</div>
-	<div class="slider">
-		
+	<script>
+		$(document).ready(function() {
+			$('.slider').owlCarousel({
+			    animateOut: 'slideOutDown',
+			    animateIn: 'flipInX',
+			    items:1,
+			    loop:true,
+			    nav:true,
+			    navText: ['<i class="icon-left-open"></i>', '<i class="icon-right-open"></i>'],
+			    autoplay:true,
+			    navContainer:'.slider-nav',
+			    dotsContainer:'.slider-dots',
+			    autoplayHoverPause:true
+			});
+		});
+
+	</script>
+	<div id="slider-wrap" class="slider-wrap">
+		<div class="slider-nav"></div>
+		<div class="slider-dots"></div>
+		<div id="slider" class="slider">
+			<div class="slide">
+				<img src="img/slider-foto-1.jpg" width="100%">
+				<div class="slide-content">
+					<h2>Заголовок</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<a href="#" class="btn">Подробнее</a>					
+				</div>
+			</div>
+			<div class="slide">
+				<img src="img/slider-foto-2.jpg" width="100%">
+				<div class="slide-content">
+					<h2>Заголовок</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<a href="#" class="btn">Подробнее</a>					
+				</div>
+			</div>
+			<div class="slide">
+				<img src="img/slider-foto-3.jpg" width="100%">
+				<div class="slide-content">
+					<h2>Заголовок</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<a href="#" class='btn'>Подробнее</a>					
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 </body>
