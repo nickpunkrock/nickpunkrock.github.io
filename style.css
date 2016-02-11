@@ -54,6 +54,30 @@
 .icon-play:before{
     content: '\e804';
 }
+.icon-down-open:before{
+    content: '\e805';
+}
+.icon-up-open:before{
+    content: '\e806';
+}
+.icon-vkontakte:before{
+    content: '\e807';
+}
+.icon-facebook:before{
+    content: '\e808';
+}
+.icon-twitter:before{
+    content: '\e809';
+}
+.icon-gplus:before{
+    content: '\e80a';
+}
+.icon-mail:before{
+    content: '\e80b';
+    position: absolute;
+    left:0;
+    top:0.15em;
+}
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
@@ -79,7 +103,7 @@ body{
 }
 .container{
     width: 100%;
-    min-width: 600px;
+    min-width: 800px;
     max-width: 1200px;
     margin: 0 auto;
 
@@ -90,6 +114,13 @@ img{
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'sansationbold';
+}
+a{
+    text-decoration: none;
+    color:#74C6DE;
+}
+a:hover{
+    text-decoration: underline;
 }
 .clear:after{
     display: table;
@@ -118,6 +149,7 @@ h1,h2,h3,h4,h5,h6{
 
     background: rgba(17, 17, 17, .4);
 }
+
 .header-container{
     max-width: 1140px;
     margin: 0 auto;
@@ -153,6 +185,18 @@ h1,h2,h3,h4,h5,h6{
 }
 .menu a:hover,.current-menu-item{
     color: #ccc;
+}
+.menu .icon-down-open{
+    position: relative;
+
+    padding-right: 25px;
+}
+.menu .icon-down-open:before{
+    font-size: 8px;
+    line-height: 16px;
+
+    position: absolute;
+    right: 10px;
 }
 .sub-menu{
     position: absolute;
@@ -292,9 +336,54 @@ h1,h2,h3,h4,h5,h6{
     position: absolute;
     top: 10%;
     left: 5%;
+
     max-width: 300px;
-    border-radius: 5px;
     padding: 20px;
 
+    border-radius: 5px;
     background: rgba(1, 1, 1, .7);
+}
+/*Подвал сайта*/
+.footer{
+    width: 100%;
+    max-width: 1200px;
+
+    border-top: 1px solid #74c6de;
+    background-color: #111;
+    padding: 20px 0 30px ;
+}
+.footer-social{
+    float: left;
+
+    padding: 0 50px;
+
+    text-align: center;
+}
+.footer-social a{
+    font-size: 0;
+
+    display: inline-block;
+
+    padding: 10px;
+
+    background: #74c6de;
+}
+.footer-social a:hover{
+    opacity: .5;
+}
+.footer-social a::before{
+    font-size: 20px;
+
+    color: #212121;
+}
+.footer-contacts{
+    float: right;
+
+    padding: 0 50px;
+    color:#fff;
+}
+
+.icon-mail{
+    position: relative;
+    padding-left: 20px;
 }
