@@ -343,6 +343,11 @@ a:hover{
     border-radius: 5px;
     background: rgba(1, 1, 1, .7);
 }
+.inner-content{
+    width: 100%;
+    max-width: 1140px;
+    padding: 30px;
+}
 /*Подвал сайта*/
 .footer{
     width: 100%;

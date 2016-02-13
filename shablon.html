@@ -15,6 +15,9 @@
 <script type="text/javascript" src="scripts/player.js"></script>
 <script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
 <script type="text/javascript" src="scripts/wow.min.js"></script>
+<script>
+	$(".sub-menu").prev('a').addClass("icon-down-open");
+</script>
 </head>
 <body>
 <img class="backround-img" src="img/boxed-bg.jpg" alt="">
@@ -41,68 +44,14 @@
 					<li><a href="#">Группы</a></li>
 					<li><a href="#">Видео</a></li>
 				</ul>
+				<script>
+					$(".sub-menu").prev('a').addClass("icon-down-open");
+				</script>
 		</div>
 	</div>
-	<script>
-		$(".sub-menu").prev('a').addClass("icon-down-open");
-		$(document).ready(function() {
-			$('.slider').owlCarousel({
-			    animateOut: 'slideOutDown',
-			    animateIn: 'flipInX',
-			    items:1,
-			    loop:true,
-			    nav:true,
-			    navText: ['<i class="icon-left-open"></i>', '<i class="icon-right-open"></i>'],
-			    autoplay:true,
-			    navContainer:'.slider-nav',
-			    dotsContainer:'.slider-dots',
-			    autoplayHoverPause:true
-			});
-		});
-
-	</script>
-	<div id="slider-wrap" class="slider-wrap">
-		<div class="slider-nav"></div>
-		<div class="slider-dots"></div>
-		<div id="slider" class="slider">
-			<div class="slide">
-				<img src="img/slider-foto-1.jpg" width="100%">
-				<div class="slide-content">
-					<h2>Заголовок</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-					<a href="#" class="btn">Подробнее</a>					
-				</div>
-			</div>
-			<div class="slide">
-				<img src="img/slider-foto-2.jpg" width="100%">
-				<div class="slide-content">
-					<h2>Заголовок</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-					<a href="#" class="btn">Подробнее</a>					
-				</div>
-			</div>
-			<div class="slide">
-				<img src="img/slider-foto-3.jpg" width="100%">
-				<div class="slide-content">
-					<h2>Заголовок</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-					<a href="#" class='btn'>Подробнее</a>					
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="inner-content">
+		<div class="inner-content">
 			
-	</div>
+		</div>
 	<div class="footer clear">
 		<div class="footer-social">
 		<h3>Мы в сети</h3>
