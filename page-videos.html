@@ -2,19 +2,21 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Главная</title>
+<title>Видео</title>
 <meta name="viewport" content="width=device-width">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="style/normalize.min.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="style/owl.carousel.css">
 <link rel="stylesheet" href="style/animate.css">
+<link rel="stylesheet" href="style/jquery.fancybox.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="scripts/soundmanager2.min.js"></script>
 <script type="text/javascript" src="scripts/player.js"></script>
 <script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
 <script type="text/javascript" src="scripts/wow.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.fancybox.pack.js"></script>
 <script>
 	$(".sub-menu").prev('a').addClass("icon-down-open");
 </script>
@@ -49,7 +51,37 @@
 				</script>
 		</div>
 	</div>
-		<div class="inner-content">
+	<div class="page-header">
+		<h1>Видео</h1>
+	</div>
+		<div class="inner-content inner-page">
+			<div class="video-page-item">
+				<div class="box-hover">
+					<img src="https://i.ytimg.com/vi/_ji4ZD_VglM/mqdefault.jpg" width="100%" alt="">
+					<a href="https://www.youtube.com/embed/L17b4-ppfX0?enablejsapi=1&amp;wmode=opaque" class="fancybox fancybox.iframe video-hover" rel="video">
+						<span class="icon-play"></span>
+					</a>
+				</div>
+				<h3><a href="">Ангел неБес - Лето в Петербурге</a></h3>
+			</div>
+			<div class="video-page-item">
+				<div class="box-hover">
+					<img src="https://i.ytimg.com/vi/_ji4ZD_VglM/mqdefault.jpg" width="100%" alt="">
+					<a href="https://www.youtube.com/embed/L17b4-ppfX0?enablejsapi=1&amp;wmode=opaque" class="fancybox fancybox.iframe video-hover" rel="video">
+						<span class="icon-play"></span>
+					</a>
+				</div>
+				<h3><a href="">Ангел неБес - Лето в Петербурге</a></h3>
+			</div>
+			<div class="video-page-item">
+				<div class="box-hover">
+					<img src="https://i.ytimg.com/vi/_ji4ZD_VglM/mqdefault.jpg" width="100%" alt="">
+					<a href="https://www.youtube.com/embed/L17b4-ppfX0?enablejsapi=1&amp;wmode=opaque" class="fancybox fancybox.iframe video-hover">
+						<span class="icon-play"></span>
+					</a>
+				</div>
+				<h3><a href="">Ангел неБес - Лето в Петербурге</a></h3>
+			</div>
 			
 		</div>
 	<div class="footer clear">
@@ -68,5 +100,14 @@
 	</div>
 </div>
 </div>
+<script>
+	$(".fancybox").fancybox({
+		padding : 0,
+		tpl: {
+  			next: '<a title="Далее" class="fancybox-nav fancybox-next"><span></span></a>',
+  			prev: '<a title="Назад" class="fancybox-nav fancybox-prev"><span></span></a>'
+ 		}
+	});
+</script>
 </body>
 </html>
