@@ -18,8 +18,14 @@ elements = $('a[href="' + hash + '"]');
 
 if (elements.length === 0) 
 { 
-$("ul.tabs li:first").addClass("active").show(); 
-$(".tab_content:first").show(); 
+i=-1; 
+do 
+{ 
+$("ul.tabs li")[i].addClass("active").show(); 
+$(".tab_content")[i].show(); 
+i++; 
+} 
+while ($("div.tab_container div.tab_content")[i].childNodes.length==0)
 } 
 else 
 { 
