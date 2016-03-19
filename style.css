@@ -612,6 +612,9 @@ div.event-link{
     padding: 30px;
     border:1px solid #636363;
 }
+.video{
+    font-size: 0;
+}
 /*Подвал сайта*/
 .footer{
     width: 100%;
