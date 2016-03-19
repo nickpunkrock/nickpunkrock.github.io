@@ -27,7 +27,6 @@ $("ul.tabs li")[i].click();
 } 
 else 
 { 
-elements.click(); 
-window.load = function(){document.body.scrollTop = 0;};
+elements.click();
 } 
 });
