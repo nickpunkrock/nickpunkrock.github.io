@@ -11,7 +11,7 @@ $(".tab_content").hide();
 var activeTab = $(this).find("a").attr("href"); 
 $(activeTab).fadeIn(0); 
 return false; 
-}); 
+};
 } 
 hash = window.location.hash; 
 elements = $('a[href="' + hash + '"]'); 
