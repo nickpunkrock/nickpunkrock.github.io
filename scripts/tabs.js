@@ -28,6 +28,6 @@ $("ul.tabs li")[i].click();
 else 
 { 
 elements.click(); 
-document.body.scrollTop = 0;
+window.load = function(){document.body.scrollTop = 0;};
 } 
 });

@@ -628,7 +628,7 @@ div.event-link{
 
     text-align: center;
 }
-.footer-social a, .groups-social a{
+.footer-social a, .group-social a{
     font-size: 0;
 
     display: inline-block;
@@ -637,10 +637,10 @@ div.event-link{
 
     background: #74c6de;
 }
-.footer-social a:hover, .groups-social a:hover{
+.footer-social a:hover, .group-social a:hover{
     opacity: .5;
 }
-.footer-social a::before, .groups-social a::before{
+.footer-social a::before, .group-social a::before{
     font-size: 20px;
 
     color: #212121;
