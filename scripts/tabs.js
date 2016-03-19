@@ -4,7 +4,7 @@ $(".tab_content").hide();
 for (i=0;i<=$("ul.tabs li").length-1;i++) 
 { 
 if ($("div.tab_container div.tab_content")[i].childNodes.length!=0)
-$("ul.tabs li")[i].onclick = new function() {
+$("ul.tabs li")[i].onclick = function() {
 $("ul.tabs li").removeClass("active"); 
 $(this).addClass("active"); 
 $(".tab_content").hide(); 
