@@ -563,8 +563,10 @@ div.event-link{
     overflow: hidden;
     padding-left:20px;
 }
+.single-info h3{
+    margin: 0;
+}
 .single-info p{
-    margin:0;
     color:rgb(197, 197, 197);
 }
 .single-info p span{
