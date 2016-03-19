@@ -16,12 +16,13 @@ return false;
 hash = window.location.hash; 
 elements = $('a[href="' + hash + '"]'); 
 
-if (elements.length === 0)
+if (elements.length === 0) 
 { 
 $("ul.tabs li:first").addClass("active").show(); 
 $(".tab_content:first").show(); 
-}
+} 
 else 
 { 
-elements.click();
-}
+elements.click(); 
+} 
+});
