@@ -28,5 +28,6 @@ $("ul.tabs li")[i].click();
 else 
 { 
 elements.click(); 
+window.scrollTo(0,0); 
 } 
 });
