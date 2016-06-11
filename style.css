@@ -148,6 +148,9 @@ a{
 .btn:hover{
     background: rgba(116, 198, 222, .5);
 }
+.bold{
+    font-weight: bold;
+}
 .header{
     display: block;
 
@@ -360,6 +363,68 @@ a{
     background-position-y: -100px;
 }
 .event{
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 1120px;
+}
+.event-date{
+    float:left;
+    width: 100px;
+    text-align:center;
+    font-family: 'sansationbold';
+    font-weight: bold;
+    padding-right: 10px;
+}
+.event-date-day{
+    font-size: 35px;
+    margin: 0 0 15px 0;
+}
+.event-date-month{
+    font-size: 20px;
+    text-transform:uppercase;
+    margin: 0;
+}
+.event-date-time{
+    margin:5px 0 0 0;
+}
+.event-info{
+    float: left;
+    max-width: 800px;
+}
+.event-title{
+    margin-top:0;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.event-subtitle{
+    margin:0;
+    margin-bottom:10px;
+}
+.event-location{
+    margin:0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.event-link{
+    float: right;
+    min-width: 200px;
+    padding-left:10px;
+}
+.event-link a{
+    display: block;
+    background: #74c6de;
+    padding: 10px 5px;
+    color:#fff;
+    text-align: center;
+
+}
+.festival.event-date{
+    width: 150px;
+}
+/*.event{
     display: table;
 
     width: 100%;
@@ -402,11 +467,8 @@ a{
     line-height: 22px;
 
     display: block;
-    overflow: hidden;
 
-    max-width: 300px;
-
-    white-space: nowrap;
+    min-width: 300px;
 }
 .event-location-city{
     font-size: 14px;
@@ -445,7 +507,7 @@ div.event-link{
 }
 .event-ticket:hover,.event-vk-link:hover{
     opacity: .5;
-}
+}*/
 .inner-page{
     font-size: 0;
 }
@@ -617,9 +679,7 @@ div.event-link{
 }
 /*Подвал сайта*/
 .footer{
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px 0 30px ;
+    padding: 30px;
 
     border-top: 1px solid #74c6de;
     background-color: #111;
@@ -672,8 +732,7 @@ div.event-link{
 @media screen and (max-width:899px)  {
     .container{
         width: 768px;
-    }
-    
+    }  
 }
 @media screen and (max-width:767px)  {
     .container{
@@ -687,10 +746,17 @@ div.event-link{
     .inner-content{
         padding: 20px;
     }
-    .event div{
-        display: table-row;
-        text-align: center;
+    .single-logo{
+        width: 100%;
+        padding-bottom: 20px;
     }
+    .single-logo img{
+        width: 100%;
+    }
+    .tab_container {
+        margin: -1px -20px 0 -20px;
+    }
+
 }
 @media screen and (max-width:479px)  {
     .container{
