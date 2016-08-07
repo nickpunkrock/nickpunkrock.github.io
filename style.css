@@ -385,6 +385,9 @@ a{
 
     width: 25%;
 }
+
+/*События*/
+
 .event{
     font-family: 'sansationbold';
     font-size: 0;
@@ -397,7 +400,7 @@ a{
     border-radius: 8px;
     background: rgba(0,0,0,.5);
 }
-.event-date{
+.event .event-date{
     font-weight: bold;
 
     position: absolute;
@@ -475,7 +478,71 @@ a{
     margin: 0;
 
     text-align: center;
+}.new-event{
+    position: relative;
+
+    text-align: center;
+
+    background: rgba(0,0,0,.5);
 }
+.new-event .event-date{
+    font-weight: bold;
+
+    position: relative;
+    z-index: 30;
+
+    display: block;
+
+    background-color: #94d64f;
+    background-image:    -moz-linear-gradient(#0fff00, rgba(32, 95, 0, .65));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0fff00), to(rgba(32, 95, 0, .65)));
+    background-image: -webkit-linear-gradient(#0fff00, rgba(32, 95, 0, .65));
+    background-image:      -o-linear-gradient(#0fff00, rgba(32, 95, 0, .65));
+    background-image:         linear-gradient(#0fff00, rgba(32, 95, 0, .65));
+}
+.new-event .event-date-day{
+    font-size: 16px;
+
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+.new-event .event-date-month{
+    font-size: 13px;
+
+    margin: 5px 0;
+    padding: 0 20px;
+}
+.new-event .event-content{
+    font-size: 16px;
+
+    padding: 3px;
+}
+.new-event .event-title{
+    font-size: 1em;
+
+    overflow: hidden;
+
+    margin: .3em 0;
+
+       text-overflow: ellipsis;
+
+    -o-text-overflow: ellipsis;
+}
+.new-event .event-title a:hover{
+    text-decoration: underline;
+}
+.new-event .event-content p{
+    font-size: 14px;
+
+    margin: .3em 0;
+}
+.new-event .ticket{
+    display: block;
+}
+
+/*Видео*/
+
 .video-item{
     font-size: 16px;
 
@@ -741,68 +808,7 @@ a{
 //         min-width: 320px;
 //     }
 // }
-.new-event{
-    position: relative;
 
-    text-align: center;
-
-    background: rgba(0,0,0,.5);
-}
-.new-event .event-date{
-    font-weight: bold;
-
-    position: relative;
-    z-index: 30;
-
-    display: block;
-
-    background-color: #94d64f;
-    background-image:    -moz-linear-gradient(#0fff00, rgba(32, 95, 0, .65));
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#0fff00), to(rgba(32, 95, 0, .65)));
-    background-image: -webkit-linear-gradient(#0fff00, rgba(32, 95, 0, .65));
-    background-image:      -o-linear-gradient(#0fff00, rgba(32, 95, 0, .65));
-    background-image:         linear-gradient(#0fff00, rgba(32, 95, 0, .65));
-}
-.new-event .event-date-day{
-    font-size: 16px;
-
-    width: 100%;
-    margin: 0;
-    padding: 10px 20px;
-}
-.new-event .event-date-month{
-    font-size: 13px;
-
-    margin: 5px 0;
-    padding: 0 20px;
-}
-.new-event .event-content{
-    font-size: 16px;
-
-    padding: 3px;
-}
-.new-event .event-title{
-    font-size: 1em;
-
-    overflow: hidden;
-
-    margin: .3em 0;
-
-       text-overflow: ellipsis;
-
-    -o-text-overflow: ellipsis;
-}
-.new-event .event-title a:hover{
-    text-decoration: underline;
-}
-.new-event .event-content p{
-    font-size: 14px;
-
-    margin: .3em 0;
-}
-.new-event .ticket{
-    display: block;
-}
 .list-item{
     font-size: 0;
 }
