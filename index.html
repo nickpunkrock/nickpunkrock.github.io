@@ -9,6 +9,12 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="style/owl.carousel.css">
 <link rel="stylesheet" href="style/animate.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="scripts/soundmanager2.min.js"></script>
+<script type="text/javascript" src="scripts/player.js"></script>
+<script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
+<script type="text/javascript" src="scripts/wow.min.js"></script>
 </head>
 <body>
 <img class="backround-img" src="img/boxed-bg.jpg" alt="">
@@ -37,7 +43,24 @@
 				</ul>
 		</div>
 	</div>
-	
+	<script>
+		$(".sub-menu").prev('a').addClass("icon-down-open");
+		$(document).ready(function() {
+			$('.slider').owlCarousel({
+			    animateOut: 'slideOutDown',
+			    animateIn: 'flipInX',
+			    items:1,
+			    loop:true,
+			    nav:true,
+			    navText: ['<i class="icon-left-open"></i>', '<i class="icon-right-open"></i>'],
+			    autoplay:true,
+			    navContainer:'.slider-nav',
+			    dotsContainer:'.slider-dots',
+			    autoplayHoverPause:true
+			});
+		});
+
+	</script>
 	<div id="slider-wrap" class="slider-wrap">
 		<div class="slider-nav"></div>
 		<div class="slider-dots"></div>
@@ -225,29 +248,5 @@
 	</div>
 </div>
 </div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.countdown.min.js"></script>
-<script type="text/javascript" src="scripts/soundmanager2.min.js"></script>
-<script type="text/javascript" src="scripts/player.js"></script>
-<script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
-<script type="text/javascript" src="scripts/wow.min.js"></script>
-<script>
-		$(".sub-menu").prev('a').addClass("icon-down-open");
-		$(document).ready(function() {
-			$('.slider').owlCarousel({
-			    animateOut: 'slideOutDown',
-			    animateIn: 'flipInX',
-			    items:1,
-			    loop:true,
-			    nav:true,
-			    navText: ['<i class="icon-left-open"></i>', '<i class="icon-right-open"></i>'],
-			    autoplay:true,
-			    navContainer:'.slider-nav',
-			    dotsContainer:'.slider-dots',
-			    autoplayHoverPause:true
-			});
-		});
-
-	</script>
 </body>
 </html>
