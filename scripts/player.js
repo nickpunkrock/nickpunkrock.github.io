@@ -1,13 +1,13 @@
-soundManager.url = 'http://rockulica/wp-content/themes/rockulica/scripts/swf/';
+soundManager.url = 'swf/';
 soundManager.debugMode = false;
 soundManager.consoleOnly = false;
 
 var file,id,oldId,oldFile,player=false;
 
 $(function(){
-	$('.play').click(function(){
+	$('.track-play').click(function(){
 		id = $(this).attr('id');
-		file = $(this).attr('data-file');		
+		file = $(this).attr('file');		
 		
 		if(player == true && id != oldId){
 			stop(oldFile);
@@ -23,8 +23,8 @@ $(function(){
 	});
 });
 $(function(){
-	$('.pause').click(function(){
-		file = $(this).prev().attr('data-file');
+	$('.track-pause').click(function(){
+		file = $(this).prev().attr('file');
 		pause(file);
 		$(this).fadeOut(200);
 		$(this).prev().delay(200).fadeIn(300);
@@ -39,7 +39,7 @@ soundManager.setVolume(file, 100);
 soundManager.play(file,{onfinish: function() {
 	id = parseFloat(id);
 	newId = id + 1;
-	newFile = $('#'+newId).attr('data-file');
+	newFile = $('#'+newId).attr('file');
 	if(newFile != undefined){
 		play(newFile,newId);
 		$('#'+id).next().fadeOut(10);

@@ -886,4 +886,7 @@ a{
     .item_3{
         width: 100%;
     }
+    .slider-wrap{
+        display:none;
+    }
 }
