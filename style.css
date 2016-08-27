@@ -878,6 +878,9 @@ a{
     .item_3{
         width: 100%;
     }
+    .slider-wrap{
+        display:none;
+    }
 }
 @media screen and (min-width:0) and (max-width:400px){
     .item_4{
