@@ -5,6 +5,7 @@
 	<title>Главная</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="style/normalize.min.css">
+	<link rel="stylesheet" href="style/style.css">
 	<!--<link rel="shortcut icon" href="http://rockulica.ru/wp-content/themes/rockulica/images/favicon.ico" type="image/x-icon">-->
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<meta name="description" content="14-го мая 2017 года на сцене петербургского клуба «Сердце» состоится сольный концерт группы «Скворцы Степанова».">
@@ -38,10 +39,11 @@
 						</a>
 					</div>
 					<div class="menu">
-						<ul>
+					<a class="toggleMenu icon-list-ul" href="#">Menu</a>
+						<ul class="menus">
 							<li><a href="#">Главная</a></li>
 							<li><a href="#">Новости</a></li>
-							<li>
+							<li class="menu-item-has-children">
 								<a href="#">Афиша</a>
 								<ul class="sub-menu">
 									<li><a href="#">Москва</a></li>
@@ -70,7 +72,7 @@
 					</div>
 					<div class="main-right-column">
 						<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, sed.</h1>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora aliquam magnam, fugit deleniti earum veritatis alias incidunt. Deserunt voluptate fugit est eaque dicta rerum blanditiis cumque quisquam incidunt molestias nihil nisi sed debitis ut illo doloribus, deleniti assumenda illum expedita delectus facere necessitatibus enim sequi aspernatur quas! Ipsum unde obcaecati accusantium tempore adipisci debitis qui dolor sit quo dicta possimus architecto soluta placeat quidem quis, totam aspernatur vero facilis, nisi inventore alias ad dolore ea? Molestiae pariatur minima, aperiam, minus quisquam beatae autem earum explicabo magnam, natus ipsam quae amet dicta distinctio eligendi reprehenderit, <a href="">officia alias</a>. Odit, dolores. Laborum doloremque recusandae assumenda minima libero perferendis expedita, mollitia iure similique in at eos, voluptate veniam ea quasi magnam consequatur vel pariatur animi incidunt. At quod rerum cumque quae est iste voluptatibus, aut mollitia voluptate optio quisquam vitae libero! Sapiente sequi, minus deserunt nihil ex tempora itaque fugit nisi eum cupiditate quae, quibusdam ea accusantium dolor, asperiores incidunt vero atque dolore accusamus ratione aliquam qui ipsum quidem? Neque nihil inventore quibusdam, quos suscipit maiores earum, fugiat iste! Aliquam tempora laboriosam velit rerum molestias, minima ipsum eum dolore. Accusamus optio necessitatibus asperiores iure laborum cumque, veritatis vel iusto vero quibusdam nobis officia culpa adipisci delectus ab aliquid suscipit dolor. Dolorem reprehenderit totam odio cupiditate dolor quam voluptatum, deleniti modi nulla repellendus. Animi, totam obcaecati. Esse earum rem autem, ab iusto cumque, veniam magni alias dicta quidem, nulla, neque doloremque magnam dolorem sapiente corporis laborum? Voluptatem enim dolor, neque reprehenderit ea dolorum esse quas laboriosam cupiditate qui iusto, vero explicabo dolorem tempore veritatis odio eaque, commodi sed ut itaque tempora, recusandae provident ullam! Fugit numquam itaque nobis, dolores aliquid qui, ullam vero hic magnam pariatur? Velit quis accusamus, impedit sed. Aspernatur illo animi, dignissimos, laudantium minima tempore ratione, dicta provident adipisci dolorum sapiente libero.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora aliquam magnam, fugit deleniti earum veritatis alias incidunt. Deserunt voluptate fugit est eaque dicta rerum blanditiis cumque quisquam incidunt molestias nihil nisi sed debitis ut illo doloribus, deleniti assumenda illum expedita delectus facere necessitatibus enim sequi aspernatur quas! Ipsum unde obcaecati accusantium tempore adipisci debitis qui dolor sit quo dicta possimus architecto soluta placeat quidem quis, totam aspernatur vero facilis, nisi inventore alias ad dolore ea? Molestiae pariatur minima, aperiam, minus quisquam beatae autem earum explicabo magnam, natus ipsam quae amet dicta distinctio eligendi reprehenderit, <a href="">officia alias</a>. Odit, dolores. Laborum doloremque recusandae assumenda minima libero perferendis expedita, mollitia iure similique in at eos, voluptate veniam ea quasi magnam consequatur vel pariatur animi <a href="">incidunt. At quod rerum</a> cumque quae est iste voluptatibus, aut mollitia voluptate optio quisquam vitae libero! Sapiente sequi, minus deserunt nihil ex tempora itaque fugit nisi eum cupiditate quae, quibusdam ea accusantium dolor, asperiores incidunt vero atque dolore accusamus ratione aliquam qui ipsum quidem? Neque nihil inventore quibusdam, quos suscipit maiores earum, fugiat iste! Aliquam tempora laboriosam velit rerum molestias, minima ipsum eum dolore. Accusamus optio necessitatibus asperiores iure laborum cumque, veritatis vel iusto vero quibusdam nobis officia culpa adipisci delectus ab aliquid suscipit dolor. Dolorem reprehenderit totam odio cupiditate dolor quam voluptatum, deleniti modi nulla repellendus. Animi, totam obcaecati. Esse earum rem autem, ab iusto cumque, veniam magni alias dicta quidem, nulla, neque doloremque magnam dolorem sapiente corporis laborum? Voluptatem enim dolor, neque reprehenderit ea dolorum esse quas laboriosam cupiditate qui iusto, vero explicabo dolorem tempore veritatis odio eaque, commodi sed ut itaque tempora, recusandae provident ullam! Fugit numquam itaque nobis, dolores aliquid qui, ullam vero hic magnam pariatur? Velit quis accusamus, impedit sed. Aspernatur illo animi, dignissimos, laudantium minima tempore ratione, dicta provident adipisci dolorum sapiente libero.
 					</div>
 				</div>
 			</div>
@@ -93,8 +95,6 @@
 		</div>
 	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script>
-		$(".sub-menu").prev('a').addClass("icon-down-open");
-	</script>
+	<script src="scripts/menu.js"></script>
 </body>
 </html>

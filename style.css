@@ -147,34 +147,22 @@ a{
 
     position: relative;
 
-    -webkit-transition: all .3s ease-in-out;
-            transition: all .3s ease-in-out;
+    -webkit-transition: all ease-in-out .5s;
+            transition: all ease-in-out .5s;
     text-decoration: none;
-
+    border-bottom: 1px solid transparent;
     color: #74c6de;
 }
-a::after{
-    position: absolute;
-    bottom: 20%;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    content: '';
-    -webkit-transition: all .3s ease;
-            transition: all .3s ease;
-
-    opacity: 0;
-    border-bottom: 0 solid #74c6de;
-    -webkit-box-shadow: inset 0 -1px 0 0 #74c6de;
-       -moz-box-shadow: inset 0 -1px 0 0 #74c6de;
-            box-shadow: inset 0 -1px 0 0 #74c6de;
+a:hover{
+    /*text-decoration: underline;*/
+    color:#fff;
+    border-color: #fff;
 }
-a:hover::after{
-    bottom: 0;
-
-    opacity: 1;
+a::after{
+     text-decoration:none;
+}
+a:hover::before{
+    text-decoration:none;
 }
 .outer-wrapper{
     display: table;
@@ -208,12 +196,14 @@ a:hover::after{
 }
 .logo{
     float: left;
+    padding-bottom: 20px;
 }
 .logo a:hover::after, .footer-social a:hover::after{
     opacity: 0;
 }
 .menu{
     float: right;
+    position: relative;
 }
 .menu ul{
     font-size: 0;
@@ -249,14 +239,15 @@ a:hover::after{
 
     padding: 0;
 }
-.menu ul li:hover > ul{
+.menu ul li.hover > ul{
     display: block;
 }
+/*
 .menu ul li:hover > a::after{
     bottom: 0;
 
     opacity: 1;
-}
+}*/
 .menu ul ul li{
     display: block;
 
@@ -380,7 +371,56 @@ a:hover::after{
     .logo{
         float: left;
     }
-    .menu{
+    .menus{
         display: none;
+    }
+    .toggleMenu{
+        float: right;
+        font-size: 0;
+        background: #666;
+        padding: 10px 15px;
+        color: #fff;
+    }
+    .toggleMenu::before{
+        font-size: 16px;
+    }
+    .toggleMenu:hover::before{
+        color: #74c6de;
+    }
+    .toggleMenu.active::before{
+        content: '\e804';
+    }
+    .menu ul{
+        float: none;
+        background-color: #262626;
+        position: absolute;
+        top: 57px;
+        width: 100%;
+    }
+    .menu a{
+        display: block;
+        border:none;
+    }
+    .menu ul li, .menu ul ul li{
+        display: block;
+        padding: 0;
+    }
+    .menu ul li a{
+        
+        padding:15px;
+        border: none;
+    }
+    .menu ul li a:hover{
+        background: rgba(255,248,213,0.1);
+        border: none;
+    }
+    .menu ul ul{
+        position: static;
+    }
+}
+@media screen and (max-width: 640px){
+    .footer-social, .footer-contacts{
+        float: none;
+        text-align: center;
     }
 }
