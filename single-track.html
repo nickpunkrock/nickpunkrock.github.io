@@ -91,7 +91,13 @@
 				<div class="playlist" style="width:100%"></div>
 			</div>
 			<div class="app-body" id="view">
-				
+				<div itemscope itemtype="http://schema.org/MusicAlbum" id="post-<?php the_ID(); ?>">
+					<meta itemprop="image" content="img/boxed-bg.jpg" />
+					<meta itemprop="url" content="http://nickpunkrock.github.io/single-track.html" />
+					<div class="pos-rlt">
+						<div class="page-bg" data-stellar-ratio="2" style="background-image: url(img/boxed-bg.jpg)"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
