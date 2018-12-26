@@ -1,4 +1,4 @@
-html {
+/*html {
   box-sizing: border-box;
   font-family: sans-serif;
   line-height: 1.15;
@@ -326,4 +326,9 @@ template {
 
 [hidden] {
   display: none !important;
+}
+*/
+header{
+  background-color: #000;
+  height: 500px;
 }
