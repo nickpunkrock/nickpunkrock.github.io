@@ -331,4 +331,5 @@ template {
 header{
   background-color: #000;
   height: 500px;
+  min-width: 500px;
 }
